@@ -243,7 +243,7 @@ hey.on('TAKE_AWAY', (data) => {
 
 function rainBurritos(){
     for (i = 0; i < 50; i++) {
-        document.getElementById("rain").innerHTML+= `<i class="rain burrito-rain">🌯</i>`
+        document.getElementById("rain").innerHTML+= `<i class="rain burrito-rain">🎉</i>`
     }
 
     setTimeout(() => {

@@ -5,21 +5,25 @@ services:
     command: mongod
     ports:
       - "27017:27017"
-    volumes:
-      - /data/mongodb:/data/db/
   heyburrito:
     image: chralp/heyburrito:latest
+    volumes:
+     - /Users/benzittlau/code/heyburrito:/usr/src/app
     ports:
       - "3333:3333"
       - "8080:8080"
     environment:
-      - BOT_NAME=heyburrito
+      - "BOT_NAME=Thank You Bot"
       - DATABASE_DRIVER=mongodb
       - MONGODB_URL=mongodb://mongodb:27017
       - MONGODB_DATABASE=heyburrito
-      - SLACK_API_TOKEN=SeeDocumentation
-      - "SLACK_EMOJI_INC=:burrito:"
-      - "SLACK_EMOJI_INC=:rottenburrito:"
+      - SCOREBOARD_URL=http://localhost:3333/
+      - IN_CHANNEL_NOTIFICATION_ENABLED=true
+      - DM_NOTIFICATION_ENABLED=false
+      - SLACK_API_TOKEN=
+      - "SLACK_EMOJI_INC=:green-onion:"
       - SLACK_DAILY_CAP=5
     links:
       - mongodb
+    labels:
+      kompose.service.type: LoadBalancer
