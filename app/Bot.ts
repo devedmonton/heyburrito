@@ -104,7 +104,7 @@ class Bot {
                 receiver => {
                     this.sendToUser(
                         receiver,
-                        "Congrats! You've been recognized for doing something great! Checkout the scoreboard here: "
+                        `Congrats! You've been recognized for doing something great! Checkout the <${scoreboardUrl}|karma board>`
                     );
                 }
             );
