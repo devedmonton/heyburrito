@@ -1,6 +1,6 @@
 class Hey {
     constructor() {
-        this.socket = new WebSocket(`ws://${window.location.hostname}:8080`);
+        this.socket = new WebSocket(`ws://${window.location.hostname}:${window.location.port}/wss`);
         this.events = {};
         this.open = false;
 

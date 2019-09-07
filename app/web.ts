@@ -69,7 +69,7 @@ export default ((publicPath: string) => {
         log.info(`Webserver started on ${port}`);
     });
 
-    const wss: any = new WebSocket.Server({ port: 8080 });
+    const wss: any = new WebSocket.Server({ server, path: '/wss' });
 
     wss.broadcast = (data) => {
         wss.clients.forEach((client) => {
