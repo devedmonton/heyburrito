@@ -6,17 +6,17 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
   
 ### Whats Heyburrito
-Heyburrito is a slack reward system that allows slack team members to recognize and reward team members who have performed well. Reward your colleagues / friends by sending them a :burrito:, each burrito is converted to points witch can be showed on a scoreboard.
+Heyburrito is a slack reward system that allows slack team members to recognize and reward team members who have performed well. Reward your colleagues / friends by sending them a :burrito:, each burrito is converted to points which can be showed on a scoreboard.
 Heyburrito is like heytaco, but free and you host it yourself.
 
 ### How does it work
 Each burrito will increment the users "burrito" - points.
 And a rottenburrito will decrement "burrito" - points
 
-Give away burrito ( :burrito: ) to a colleague if they done something good.
-...Or maybe a rottenburrito ( :rottenburrit: , emoji needed ) if they done something bad.. :)
+Give away burrito ( :burrito: ) to a colleague if they have done something good.
+...Or maybe a rottenburrito ( :rottenburrit: , emoji needed ) if they have done something bad.. :)
 
-Ping one or several of your colleagues and give away :burritos: if the deserv it. Otherwise :rottenburrito: if not ...  
+Ping one or several of your colleagues and give away :burritos: if they deserve it. Otherwise :rottenburrito: if not ...  
 
 Example:  
 This will increase chralps "burrito" - points by 3
@@ -39,8 +39,8 @@ This will increase chralps and fagges "burrito" - points by 2 ( each )
 1. Go to https://yourworkspace.slack.com/apps and search for Bots.  
 2. Add **Bots ( Connect a bot to the Slack Real Time Messaging API)**.  
 3. Give the bot a name, ex: heyburrito, and obtain apiToken.  
-4. Choose how to run it => See Docker or Node section .
-5. Invite the new bot to your slack channels ( where u want to be able to send burritos ).
+4. Choose how to run it => See Docker or Node section.
+5. Invite the new bot to your slack channels ( where you want to be able to send burritos ).
 
 ### Docker
 1. Open and edit `docker-compose.yml`.
